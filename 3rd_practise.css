@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.hero_section {
+background: linear-gradient(to right, #4facfe, #00f2fe);
+text-align: center;
+padding-top: 30vh;
+height: 80vh;
+}
+.hero_section button {
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+.hero_section button:hover {
+    transform: scale(1.1);
+}
+.My_work {
+    text-align: center;
+    margin-top: 40px;
+}
+.cards{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.card {
+background-color:#f4f4f4;
+padding: 15px;
+border-radius: 8px;
+
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.contact {
+    text-align: center;
+    margin-top: 60px;
+}
+.contact input {
+    padding: 10px 90px;
+    text-align:start;
+    margin: 10px;
+}
+.contact button {
+    color: white;
+    width: 50%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px;
+background-color: black;
+cursor: pointer;
+ transform: scale(1.1);
+
+}
+.contact input:hover {
+    border: 1px solid black;
+}
+.contact textarea {
+       padding: 10px 90px;
+}
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width:768px) {
+   .navbar {
+    flex-direction:row;
+    align-items: center;
+    
+   }
+   .card {
+     grid-template-rows:1fr;
+   }
+   
+};
