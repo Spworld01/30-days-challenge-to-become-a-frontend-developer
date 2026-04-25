@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    background-color: #222222;
+}
+.side_bar1 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: 950px;
+}
+.side_bar1 a {
+    text-decoration: none;
+    color: white;
+
+}
+.side_bar1 a:hover {
+    background-color:#222222;
+    color: red;
+    border-radius: 5px;
+}
+.side_bar2 {
+    color: white;
+    padding: 15px 30px; 
+  
+
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 15px;
+}
+img {
+    height: 250px;
+    width: 300px;
+    border: 1px solid black;
+}
+img:hover {
+ border: 1px solid red;
+ transform: translateY(-5px);
+}
+footer {
+    background-color: #222222;
+    color: white;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.progress {
+    width: 200px;
+    height: 5px;
+    background-color: #555;
+
+}
+.progress span {
+    display: block;
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
