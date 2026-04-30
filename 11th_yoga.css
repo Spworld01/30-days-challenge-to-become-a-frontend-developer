@@ -6,11 +6,17 @@
 }
 body {
     background-color: white;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
 }
 nav {
     display: flex;
     justify-content: space-between;
     padding: 40px 50px;
+
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: navDown 0.8s ease forwards;
 }
 .naving img{
     padding: 20px 120px;
@@ -25,11 +31,16 @@ nav {
     color: pink;
 }
 .Twoslide {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .first_slide {
     padding:120px 210px;
-    /* margin: 200px; */
+    
+    transform: translateX(-80px);
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.5s;
 }
 .first_slide h2 {
     color:#9a4b7b;;
@@ -52,11 +63,24 @@ nav {
     margin-top: 25px;
     padding: 15px 20px;
     font-size: 20px;
+
+    transform: scale(0.8)s;
+    opacity: 0;
+    animation: popUP 0.5s ease forwards;
+    animation-delay: 1s;
 }
 .first_slide button:hover {
-    transition: 0.3ms;
+    transition: 0.3s;
     cursor: pointer;
+    background-color: #7a3a60;
 }
+/* .second_slide {
+    transform:scale(0.8)s;
+    opacity:0;
+    animation:slideLeft  1s ease forwards;
+    animation-delay: 0.7s;
+} */
+
 .second_slide img {
     height: 800px;
     width: 700px; 
@@ -64,4 +88,57 @@ nav {
 }
 .second_slide img:hover {
     cursor: pointer;
+}
+.icons {
+    margin-top: 100px;
+
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1.2s;
+}
+.icons img {
+    height: 50px;
+    width: 50px;
+}
+@media (max-width:768px) {
+.Twoslide {
+    grid-template-columns: 1fr;
+}
+.first_slide {
+    order: 2;
+}
+.second_slide {
+    order: 1;
+}    
+}
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+    
+}
+@keyframes navDown {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideRight {
+    to{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideleft {
+    to {
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes popUp {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }

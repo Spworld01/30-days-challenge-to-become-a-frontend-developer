@@ -162,6 +162,7 @@
 // console.log(substr2);
 
 // replace 
-let str="Hello World";
-let newstr=str.replace("World","Javascript");
-console.log(newstr);
+// let str="Hello World";
+// let newstr=str.replace("World","Javascript");
+// console.log(newstr);
+
